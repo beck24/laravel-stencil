@@ -16,3 +16,5 @@ yarn-error.log
 /public/build
 /public/assets
 /public/host.config.json
+/public/sitemap.xml
+/public/robots.txt

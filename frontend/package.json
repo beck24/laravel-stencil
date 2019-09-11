@@ -12,12 +12,15 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "prod": "npm run production",
+    "production": "stencil build --prerender"
   },
   "dependencies": {
     "@ionic/core": "^4.9.0"
   },
   "devDependencies": {
-    "@stencil/core": "1.4.0"
+    "@stencil/core": "1.4.0",
+    "dotenv-safe": "^8.1.0"
   }
 }

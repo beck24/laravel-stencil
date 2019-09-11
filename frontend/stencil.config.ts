@@ -1,10 +1,16 @@
 import { Config } from '@stencil/core';
+import * as dotenv from 'dotenv-safe';
 
-// https://stenciljs.com/docs/config
+declare var process: any;
+
+dotenv.config({
+  example: process.env.CI ? '.env.ci.example' : '.env.example'
+});
 
 export const config: Config = {
   outputTargets: [{
     type: 'www',
+    baseUrl: process.env.APP_BASEURL,
     dir: '../public',
     empty: false,
     serviceWorker: null

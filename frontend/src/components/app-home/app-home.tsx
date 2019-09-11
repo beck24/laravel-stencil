@@ -22,10 +22,6 @@ export class AppHome {
           check out our docs on <a href="https://stenciljs.com">stenciljs.com</a> to get started.
         </p>
 
-        <p>
-          This is also here
-        </p>
-
         <ion-button href="/profile/ionic" expand="block">Profile page</ion-button>
       </ion-content>
     ];
