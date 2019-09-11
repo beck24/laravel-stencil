@@ -9,3 +9,10 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
+
+#custom ignores for stencil built files
+/public/index.html
+/public/manifest.json
+/public/build
+/public/assets
+/public/host.config.json
