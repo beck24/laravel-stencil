@@ -46,7 +46,7 @@ Add the key to `/frontend/src/services/environment/environment-config.ts` interf
         BASE_URL: string;
     }
 
-Add the key to `/frontend/src/global/app.ts` in the `setupConfig` function args encapsulated by `&lt;@` and `@&gt;`:
+Add the key to `/frontend/src/global/app.ts` in the `setupConfig` function args encapsulated by `<@` and `@>`:
 
     setupConfig({
         API_URL: '<@API_URL@>',
