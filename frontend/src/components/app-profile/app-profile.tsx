@@ -1,5 +1,6 @@
 import { Component, Prop, State, h } from '@stencil/core';
 import { sayHello } from '../../helpers/utils';
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 
 @Component({
   tag: 'app-profile',
@@ -32,6 +33,10 @@ export class AppProfile {
         <p>
           {sayHello()}! My name is {this.formattedName()}. My name was passed in through a
           route param!
+        </p>
+
+        <p>
+          The configured API_URL is { EnvironmentConfigService.getInstance().get('API_URL') }
         </p>
 
         <ion-item>

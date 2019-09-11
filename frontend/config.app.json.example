@@ -1,0 +1,4 @@
+{
+  "API_URL": "http://laravel-stencil.localhost:8080/api",
+  "BASE_URL": "http://laravel-stencil.localhost:8080"
+}

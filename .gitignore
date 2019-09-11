@@ -18,3 +18,5 @@ yarn-error.log
 /public/host.config.json
 /public/sitemap.xml
 /public/robots.txt
+
+/frontend/config.app.json
