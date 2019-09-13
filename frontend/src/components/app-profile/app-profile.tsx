@@ -23,6 +23,20 @@ export class AppProfile {
     let result = await APIService.getTest();
 
     console.log(result);
+
+    try {
+      let loginResult = await APIService.login('beck24@gmail.com', 'sitka007');
+
+      let token = loginResult.access_token;
+
+      console.log(token);
+
+      let user = await APIService.getUser(token);
+
+      console.log(user);
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   render() {

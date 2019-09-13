@@ -9,6 +9,10 @@ Install dependencies:
 
 `composer install`
 
+Install passport (api auth back end):
+
+`php artisan passport:install`
+
 # PWA (front end)
 
 ## Installation
