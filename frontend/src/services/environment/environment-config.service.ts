@@ -13,8 +13,7 @@ export class EnvironmentConfigService {
 
     static getInstance() {
         if (!EnvironmentConfigService.instance) {
-            EnvironmentConfigService.instance =
-                              new EnvironmentConfigService();
+            EnvironmentConfigService.instance = new EnvironmentConfigService();
         }
         return EnvironmentConfigService.instance;
     }

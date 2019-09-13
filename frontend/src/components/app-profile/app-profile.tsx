@@ -1,6 +1,7 @@
 import { Component, Prop, State, h } from '@stencil/core';
 import { sayHello } from '../../helpers/utils';
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+import { APIService } from '../../services/api/api.service';
 
 @Component({
   tag: 'app-profile',
@@ -16,6 +17,12 @@ export class AppProfile {
       return this.name.substr(0, 1).toUpperCase() + this.name.substr(1).toLowerCase();
     }
     return '';
+  }
+
+  async fetchApi() {
+    let result = await APIService.getTest();
+
+    console.log(result);
   }
 
   render() {
@@ -46,6 +53,7 @@ export class AppProfile {
             onIonChange={ev => (this.state = ev.detail.checked)}
           />
         </ion-item>
+        <ion-button onClick={() => this.fetchApi() }>Fetch API</ion-button>
       </ion-content>
     ];
   }
